@@ -2,10 +2,12 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-1.4-4C1161.svg?style=flat-square)](http://contributor-covenant.org/version/1/4)
 [![Uses editorconfig](https://img.shields.io/badge/editorconfig--e0efef.svg?style=flat-square)](.editorconfig)
+[![JS written in Standard style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 [![Licensed under MIT](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 
 > Map artifact names to cachebusted names
 
+A manifest file is a JSON file that maps the name of an artifact to the path you can actually find it at. This is an important feature when you use cachebusting. This library helps you read and write these files.
 
 ## Table of Contents
 
@@ -24,7 +26,34 @@ $ npm install cachebusted
 
 ## Usage
 
-Currently, this does nothing.
+Initialize a new manifest file like this (the file doesn't need to exist yet):
+
+```javascript
+let manifest = new Manifest({
+  path: '/path/to/a/manifest.json'
+})
+```
+
+You can read from the file like this:
+
+```javascript
+manifest.translate('index.js').then((val) => {
+  // val is now the cachebusted version of index.js
+  console.log(val)
+}).catch((err) => {
+  // Don't forget to handle errors
+})
+```
+
+You can now add entries to the file like this:
+
+```javascript
+writeManifest.add({ 'frontend.js': 'frontend-123.js' }).then(() => {
+  // Do what you need to do next
+}).catch((err) => {
+  // Don't forget to handle errors
+})
+```
 
 ## Contribute
 
