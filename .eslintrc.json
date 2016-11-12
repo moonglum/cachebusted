@@ -1,0 +1,11 @@
+{
+    "extends": "standard",
+    "rules": {
+      "no-var": "error"
+    },
+    "installedESLint": true,
+    "plugins": [
+        "standard",
+        "promise"
+    ]
+}

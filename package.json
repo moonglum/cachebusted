@@ -1,0 +1,31 @@
+{
+  "name": "cachebusted",
+  "version": "1.0.0",
+  "description": "Map artifact names to cachebusted names",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js && eslint *.js lib/*.js",
+    "precommit": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonglum/cachebusted.git"
+  },
+  "author": "Lucas Dohmen <lucas@dohmen.io> (https://lucas.dohmen.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moonglum/cachebusted/issues"
+  },
+  "homepage": "https://github.com/moonglum/cachebusted#readme",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.2",
+    "eslint-plugin-standard": "^2.0.1",
+    "husky": "^0.11.9",
+    "tape": "^4.6.2"
+  }
+}
