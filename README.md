@@ -1,5 +1,6 @@
 # Standard Readme
 
+[![available on npm](https://img.shields.io/npm/v/cachebusted.svg?style=flat-square)](https://www.npmjs.com/package/cachebusted)
 [![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-1.4-4C1161.svg?style=flat-square)](http://contributor-covenant.org/version/1/4)
 [![Uses editorconfig](https://img.shields.io/badge/editorconfig--e0efef.svg?style=flat-square)](.editorconfig)
 [![JS written in Standard style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
